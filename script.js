@@ -1,2 +1,2 @@
 
-document.getElementById("firstLink").focus()
+//document.getElementById("firstLink").focus()
