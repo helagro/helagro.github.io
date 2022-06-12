@@ -1,0 +1,14 @@
+.linksContainer{
+    margin: 0 auto;
+    width: max-content;
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 2em;
+    margin-top: 20%;
+    row-gap: 0.5em;
+}
+
+.largeLink{
+    text-align: center;
+    font-size: 1.5em;
+}
