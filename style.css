@@ -17,11 +17,19 @@ main{
     width: max-content;
     display: grid;
     grid-template-columns: auto;
+    grid-auto-rows: 2.2em;
     column-gap: 2em;
-    row-gap: 0.5em;
 }
 
 .largeLink{
     text-align: center;
     font-size: 1.5em;
+    transition: all 0.3s ease;
+    color: #545454;
+}
+
+.largeLink:hover, .largeLink:focus{
+    font-size: 1.6em;
+    color: #434343;
+    outline: none;
 }
