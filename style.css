@@ -21,10 +21,6 @@ main{
     column-gap: 2em;
 }
 
-.invisible{
-    display: none;
-}
-
 .largeLink{
     text-align: center;
     font-size: 1.5em;
@@ -36,4 +32,5 @@ main{
     font-size: 1.6em;
     color: #383838;
     outline: none;
+    font-weight: 600;
 }
