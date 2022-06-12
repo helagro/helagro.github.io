@@ -21,6 +21,10 @@ main{
     column-gap: 2em;
 }
 
+.invisible{
+    display: none;
+}
+
 .largeLink{
     text-align: center;
     font-size: 1.5em;
@@ -30,6 +34,6 @@ main{
 
 .largeLink:hover, .largeLink:focus{
     font-size: 1.6em;
-    color: #434343;
+    color: #383838;
     outline: none;
 }
