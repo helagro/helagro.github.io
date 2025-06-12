@@ -16,6 +16,14 @@ h1 {
     color: #535353;
 }
 
+.hiddenElem {
+    display: none;
+}
+
+.showHidden .hiddenElem {
+    display: block;
+}
+
 /* ================================== LINKS ================================= */
 
 .linksContainer {
@@ -79,6 +87,8 @@ h1 {
     transition: all 0.3s ease;
 }
 
+.socialLink:focus,
 .socialLink:hover {
     transform: scale(1.2);
+    outline: none;
 }
