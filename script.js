@@ -1,8 +1,21 @@
-function onHover() {
-    document.activeElement.blur()
-}
+;[...document.getElementsByClassName('linkGroup')].forEach(elem => {
+    console.log(elem, 'wow')
+
+    for (const child of elem.children) {
+        child.addEventListener('mouseover', () => {
+            document.activeElement.blur()
+            child.focus()
+        })
+
+        child.addEventListener('mouseout', () => {
+            child.blur()
+        })
+    }
+})
 
 let timeout = null
+
+/* ============================== HANDLE HIDDEN ELEMS ============================== */
 
 document.addEventListener('keydown', event => {
     if (event.altKey) {
