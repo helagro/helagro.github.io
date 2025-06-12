@@ -1,35 +1,84 @@
-*{
+* {
     font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
     margin: 0;
 }
 
-main{
-    display: flex;
-    align-items: center;
-    height: 100vh;
-}
-
-.linksContainer{
-    margin: 0 auto 20vh auto;
-    width: max-content;
+main {
     display: grid;
-    grid-template-columns: auto;
-    grid-auto-rows: 2.2em;
-    column-gap: 2em;
-}
-
-.largeLink{
     text-align: center;
-    font-size: 1.5em;
-    transition: all 0.3s ease;
-    color: #545454;
+    margin-top: 8%;
 }
 
-.largeLink:hover, .largeLink:focus{
-    font-size: 1.6em;
-    color: #383838;
+h1 {
+    color: #535353;
+}
+
+/* ================================== LINKS ================================= */
+
+.linksContainer {
+    margin: 0 auto 20vh auto;
+    width: 25em;
+    text-align: center;
+}
+
+.linksContainer h2 {
+    display: block;
+    margin-bottom: 0.4em;
+    font-size: 1.8em;
+    color: #919191;
+}
+
+.linkGroup {
+    display: grid;
+    row-gap: 1em;
+    margin-bottom: 3em;
+    grid-auto-rows: 2em;
+}
+
+.largeLink {
+    text-align: center;
+    font-size: 1.4em;
+    transition: all 0.3s ease;
+    color: #282828;
+    display: grid;
+    grid-template-columns: min-content max-content;
+    column-gap: 0.5em;
+    align-items: center;
+}
+
+.largeLink:hover,
+.largeLink:focus {
+    font-size: 1.8em;
     outline: none;
+}
+
+.largeLink img {
+    margin-top: 0.11em;
+    align-self: center;
+}
+/* ================================= SOCIALS ================================ */
+
+.socialsContainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    padding: 1em 0;
+    grid-auto-columns: 2.6em;
+    align-content: center;
+    justify-items: center;
+    grid-auto-flow: column;
+}
+
+.socialLink {
+    transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+    transform: scale(1.2);
 }

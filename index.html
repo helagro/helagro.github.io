@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,81 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
-    <title>Links</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Henrik's portfolio</title>
 </head>
+
 <body>
     <main>
+        <h1>Henrik's portfolio</h1>
+
         <div class="linksContainer">
-            <a href="https://helagro.github.io/web-developer-tools/" class="largeLink" tabindex="1" onmouseover="onHover()">
-                Web Developer Tools
+
+            <h2>General</h2>
+            <div class="linkGroup">
+                <a href="https://helagro.se/resume" class="largeLink" onmouseover="onHover()">
+                    <img src="img/document.svg" alt="document icon" height="15">
+                    resume
+                </a>
+
+                <a href="https://github.com/helagro?tab=repositories" class="largeLink" onmouseover="onHover()">
+                    <!-- <img src="img/round.svg" alt="round icon" height="15"> -->
+                    <img src="img/github-mark.svg" alt="github icon" height="15">
+                    repositories
+                </a>
+            </div>
+
+            <h2>Projects</h2>
+            <div class="linkGroup">
+                <div class="linkContainer">
+                    <a href="https://gitlab.com/treqs-on-git/treqs-vscode" class="largeLink" onmouseover="onHover()">
+                        <img src="img/gitlab-logo-500.svg" alt="github icon" height="15">
+                        T-Reqs for VS Code
+                    </a>
+
+                    <!-- <span>T-Reqs is an open-source requirements management software for which we created a VS Code
+                        plugin as part of a Bachelor's thesis</span> -->
+                </div>
+
+                <a href="https://github.com/helagro/.dotfiles" class="largeLink" onmouseover="onHover()">
+                    <img src="img/github-mark.svg" alt="github icon" height="15">
+                    .dotfiles
+                </a>
+
+                <a href="https://github.com/stars/helagro/lists/uni" class="largeLink" onmouseover="onHover()">
+                    <img src="img/github-mark.svg" alt="github icon" height="15">
+                    university projects
+                </a>
+
+                <a href="https//helagro.github.io/web-developer-tools/" class="largeLink" onmouseover="onHover()">
+                    <img src="img/github-mark.svg" alt="github icon" height="15">
+                    web developer tools
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="socialsContainer">
+            <a href="https://www.linkedin.com/in/henrik-lagrosen" target="_blank" rel="noopener noreferrer"
+                class="socialLink">
+                <img src="img/LI-In-Bug.png" alt="LinkedIn icon" height="34">
             </a>
-            <a href="https://helagro.github.io/vocabulary-sorter-website/" class="largeLink" tabindex="2" onmouseover="onHover()">
-                Vocabulary Sorter
+
+            <a href="https://github.com/helagro" style="padding-bottom: .1em;" rel="noopener noreferrer" target="_blank"
+                class="socialLink" rel="noopener noreferrer">
+                <img src="img/github-mark.svg" alt="github icon" height="33">
             </a>
-            <a href="https://helagro.github.io/link-href-browser-preview-test/" class="largeLink" tabindex="3" onmouseover="onHover()">
-                Link Href Browser Preview Test
-            </a>
-            <a href="https://helagro.github.io/private_notes/build/web/index.html" class="largeLink" tabindex="4" onmouseover="onHover()">
-               Opnot Note Taking App
-            </a>
-            <a href="https://github.com/helagro?tab=repositories" class="largeLink" tabindex="5" onmouseover="onHover()">
-                Repositories
+
+            <a href="https://learn.microsoft.com/en-us/users/henriklagrosen-0710/" rel="noopener noreferrer"
+                target="_blank" class="socialLink" rel="noopener noreferrer">
+                <img src="img/azure.svg" alt="Azure icon" height="34">
             </a>
         </div>
-    </main>
+    </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
