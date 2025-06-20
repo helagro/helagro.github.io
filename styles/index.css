@@ -1,0 +1,27 @@
+/* ================================= SOCIALS ================================ */
+
+.socialsContainer {
+    position: fixed;
+    bottom: 0.8em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    display: grid;
+    justify-content: center;
+    border-radius: 1.5em;
+    padding: 0.8em 2em;
+    grid-auto-columns: 2.9em;
+    align-content: center;
+    justify-items: center;
+    grid-auto-flow: column;
+}
+
+.socialLink {
+    transition: all 0.3s ease;
+}
+
+.socialLink:focus,
+.socialLink:hover {
+    transform: scale(1.2);
+    outline: none;
+}

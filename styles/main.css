@@ -6,7 +6,7 @@
 
     --background-primary: #f5f5f5;
 
-    --link-container-width: 25em;
+    --link-container-width: 32em;
 }
 
 /* ================================= GENERAL ================================ */
@@ -44,7 +44,7 @@ h1 {
 /* ================================== LINKS ================================= */
 
 .linksContainer {
-    margin: 0 auto 20vh auto;
+    margin: 0 auto;
     max-width: var(--link-container-width);
     width: 100%;
     text-align: center;
@@ -74,6 +74,7 @@ h1 {
     grid-template-columns: min-content max-content;
     column-gap: 0.5em;
     align-items: center;
+    white-space: normal;
 }
 
 .largeLink img {
@@ -87,34 +88,6 @@ h1 {
     color: var(--color-text-secondary);
 }
 
-/* ================================= SOCIALS ================================ */
-
-.socialsContainer {
-    position: fixed;
-    bottom: 0.8em;
-    left: 50%;
-    transform: translateX(-50%);
-    width: max-content;
-    display: grid;
-    justify-content: center;
-    border-radius: 1.5em;
-    padding: 0.8em 2em;
-    grid-auto-columns: 2.9em;
-    align-content: center;
-    justify-items: center;
-    grid-auto-flow: column;
-}
-
-.socialLink {
-    transition: all 0.3s ease;
-}
-
-.socialLink:focus,
-.socialLink:hover {
-    transform: scale(1.2);
-    outline: none;
-}
-
 /* ================================== MEDIA ================================= */
 
 @media (prefers-color-scheme: dark) {
@@ -126,7 +99,6 @@ h1 {
     }
 
     .invertWhenDark {
-        /* filter: invert(1) hue-rotate(180deg); */
         filter: invert(100%) sepia(1%) saturate(100%) hue-rotate(340deg) brightness(100%) contrast(100%);
     }
 }
