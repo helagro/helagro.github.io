@@ -43,6 +43,18 @@ h1 {
 
 /* ================================== LINKS ================================= */
 
+.h1Link {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.h1Link:hover,
+.h1Link:focus {
+    text-decoration: underline;
+    outline: none;
+}
+
 .linksContainer {
     margin: 0 auto;
     max-width: var(--link-container-width);
